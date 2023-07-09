@@ -1,4 +1,5 @@
 import config from '../../../config';
+import ApiError from '../../../errors/ApiError';
 import { IUser } from './user.interface';
 import User from './user.model';
 import { sendUserId } from './user.utility';
@@ -12,11 +13,13 @@ const createUserInDb = async (info: IUser): Promise<IUser | null> => {
   }
   const user = await User.create(info);
   if (!user) {
-    throw new Error('User creation failed');
+    throw new ApiError(400, 'User creation failed');
   }
   return user;
 };
 
-export default {
+const UserService = {
   createUserInDb,
 };
+
+export default UserService;
