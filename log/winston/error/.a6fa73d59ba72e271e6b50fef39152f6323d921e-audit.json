@@ -1,40 +1,40 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/.a6fa73d59ba72e271e6b50fef39152f6323d921e-audit.json",
+  "files": [
+    {
+      "date": 1688639216170,
+      "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-06-07-16.log",
+      "hash": "d21f9b9ddbf300f87396c925cf14fbdb9bc7db57307e2391023e38fd269855d0"
     },
-    "auditLog": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/.a6fa73d59ba72e271e6b50fef39152f6323d921e-audit.json",
-    "files": [
-        {
-            "date": 1688639216170,
-            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-06-07-16.log",
-            "hash": "d21f9b9ddbf300f87396c925cf14fbdb9bc7db57307e2391023e38fd269855d0"
-        },
-        {
-            "date": 1688670469859,
-            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-07-07-01.log",
-            "hash": "feea2e10c1882888151d7227cdc1747d762fd1976695c8a8e08a6c787478e5f9"
-        },
-        {
-            "date": 1688875909759,
-            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-09-07-10.log",
-            "hash": "58483f1dd3c8c4bbfa8eb562b90687a048c0e947c06ed8973305302445356b58"
-        },
-        {
-            "date": 1688885507913,
-            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-09-07-12.log",
-            "hash": "b4aa988fd04f37bf27659a39fa0022552f262ee3c81d3aee8b0f6e5ff6fc1f91"
-        },
-        {
-            "date": 1688910759892,
-            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-09-07-19.log",
-            "hash": "dbe4440043ce54e0a813876732bc394616c971c440d03a831446521bc7449839"
-        },
-        {
-            "date": 1688911903592,
-            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-09-07-20.log",
-            "hash": "674111fb2d9f79af4540cad173856a77cc20a683cd6f62e5ac3d7165ccc6829e"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1688670469859,
+      "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-07-07-01.log",
+      "hash": "feea2e10c1882888151d7227cdc1747d762fd1976695c8a8e08a6c787478e5f9"
+    },
+    {
+      "date": 1688875909759,
+      "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-09-07-10.log",
+      "hash": "58483f1dd3c8c4bbfa8eb562b90687a048c0e947c06ed8973305302445356b58"
+    },
+    {
+      "date": 1688885507913,
+      "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-09-07-12.log",
+      "hash": "b4aa988fd04f37bf27659a39fa0022552f262ee3c81d3aee8b0f6e5ff6fc1f91"
+    },
+    {
+      "date": 1688910759892,
+      "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-09-07-19.log",
+      "hash": "dbe4440043ce54e0a813876732bc394616c971c440d03a831446521bc7449839"
+    },
+    {
+      "date": 1688911903592,
+      "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-09-07-20.log",
+      "hash": "674111fb2d9f79af4540cad173856a77cc20a683cd6f62e5ac3d7165ccc6829e"
+    }
+  ],
+  "hashType": "sha256"
 }

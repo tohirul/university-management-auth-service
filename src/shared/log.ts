@@ -37,7 +37,7 @@ const checkInfo = createLogger({
       datePattern: 'YYYY-DD-MM-HH',
       zippedArchive: true,
       maxSize: '20m',
-      maxFiles: '14d',
+      maxFiles: '5d',
     }),
   ],
 });
@@ -64,7 +64,7 @@ const checkError = createLogger({
       datePattern: 'YYYY-DD-MM-HH',
       zippedArchive: true,
       maxSize: '20m',
-      maxFiles: '14d',
+      maxFiles: '5d',
     }),
   ],
 });

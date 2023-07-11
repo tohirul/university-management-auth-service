@@ -244,3 +244,27 @@
   label: 'Tohirul',
   timestamp: '2023-07-09T14:37:10.739Z'
 }
+{
+  message: 'Server received SIGTERM signal. Server connection will be closed.',
+  level: 'warn',
+  label: 'Tohirul',
+  timestamp: '2023-07-09T14:45:15.651Z'
+}
+{
+  message: 'Server is breathing on 5000',
+  level: 'info',
+  label: 'Tohirul',
+  timestamp: '2023-07-09T14:46:49.456Z'
+}
+{
+  message: 'Database Connection Established',
+  level: 'info',
+  label: 'Tohirul',
+  timestamp: '2023-07-09T14:46:52.402Z'
+}
+{
+  message: 'Server received SIGINT signal. Server connection will be closed.',
+  level: 'warn',
+  label: 'Tohirul',
+  timestamp: '2023-07-09T14:48:58.101Z'
+}
