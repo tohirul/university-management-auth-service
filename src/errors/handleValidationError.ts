@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import { IGenericErrorResponse } from '../typeDefinitions/commonTypes';
-import { IGenericErrorMessage } from '../typeDefinitions/errorTypes';
+import { IGenericErrorResponse } from '../types/commonTypes';
+import { IGenericErrorMessage } from '../types/errorTypes';
 
 const handleValidationError = (
   err: mongoose.Error.ValidationError
@@ -15,7 +15,8 @@ const handleValidationError = (
       };
     }
   );
-  const statusCode = 500;
+
+  const statusCode = 400;
   return {
     statusCode,
     message: 'Validator error',
