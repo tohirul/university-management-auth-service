@@ -1,0 +1,30 @@
+{
+  message: 'Server is breathing on 5000',
+  level: 'info',
+  label: 'Tohirul',
+  timestamp: '2023-07-11T17:17:48.166Z'
+}
+{
+  message: 'Database Connection Established',
+  level: 'info',
+  label: 'Tohirul',
+  timestamp: '2023-07-11T17:17:51.112Z'
+}
+{
+  message: 'Server received SIGTERM signal. Server connection will be closed.',
+  level: 'warn',
+  label: 'Tohirul',
+  timestamp: '2023-07-11T17:19:04.946Z'
+}
+{
+  message: 'Server is breathing on 5000',
+  level: 'info',
+  label: 'Tohirul',
+  timestamp: '2023-07-11T17:19:06.043Z'
+}
+{
+  message: 'Database Connection Established',
+  level: 'info',
+  label: 'Tohirul',
+  timestamp: '2023-07-11T17:19:09.021Z'
+}

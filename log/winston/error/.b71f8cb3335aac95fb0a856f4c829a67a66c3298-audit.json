@@ -69,6 +69,11 @@
             "date": 1689069847158,
             "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-11-07-16.log",
             "hash": "e1123955f5c6532c7390e3af22fec9878b39cda14266589ca2893a32f5a76273"
+        },
+        {
+            "date": 1689095867858,
+            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-11-07-23.log",
+            "hash": "929aef798a5f68a65a5c3e5dff0eb72bda96753d5b9d57a2bab5abb9bde985c2"
         }
     ],
     "hashType": "sha256"
