@@ -16,12 +16,11 @@ const createSemester = async (
       data: result,
     });
   } catch (error) {
-    next();
+    next(error);
   }
 };
 
 const AcademicSemesterController = {
   createSemester,
 };
-
 export default AcademicSemesterController;

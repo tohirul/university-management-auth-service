@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
-import { NextFunction, Request, Response } from 'express';
-import { ErrorRequestHandler } from 'express-serve-static-core';
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import { Error } from 'mongoose';
 import { ZodError } from 'zod';
 import config from '../../config';
@@ -12,7 +11,7 @@ import log from '../../shared/log';
 import { IGenericErrorMessage } from '../../types/errorTypes';
 
 const globalErrorHandler: ErrorRequestHandler = (
-  error: any,
+  error,
   req: Request,
   res: Response,
   next: NextFunction
@@ -31,18 +30,6 @@ const globalErrorHandler: ErrorRequestHandler = (
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
-  } else if (error instanceof Error) {
-    console.log('Error Got into Error Condition');
-
-    message = error?.message;
-    errorMessages = error?.message
-      ? [
-          {
-            path: ``,
-            message: error?.message,
-          },
-        ]
-      : [];
   } else if (error instanceof ZodError) {
     console.log('Error Got into Zod Error Condition');
 
@@ -54,6 +41,18 @@ const globalErrorHandler: ErrorRequestHandler = (
     console.log('Error Got into API Error Condition');
 
     statusCode = error?.statusCode;
+    message = error.message;
+    errorMessages = error?.message
+      ? [
+          {
+            path: '',
+            message: error?.message,
+          },
+        ]
+      : [];
+  } else if (error instanceof Error) {
+    console.log('Error Got into Mongoose Error Condition');
+
     message = error?.message;
     errorMessages = error?.message
       ? [
@@ -64,12 +63,7 @@ const globalErrorHandler: ErrorRequestHandler = (
         ]
       : [];
   }
-  console.log('Check Zod Error: ', {
-    success: false,
-    message,
-    errorMessages,
-    stack: config.env !== 'production' ? error?.stack : undefined,
-  });
+
   res.status(statusCode).json({
     success: false,
     message,

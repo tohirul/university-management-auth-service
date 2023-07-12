@@ -12,5 +12,4 @@ router.post(
 );
 
 const AcademicSemesterRoute = router;
-
 export default AcademicSemesterRoute;
