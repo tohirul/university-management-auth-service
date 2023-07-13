@@ -8,7 +8,7 @@ import ApiError from '../../errors/ApiError';
 import handleValidationError from '../../errors/handleValidationError';
 import handleZodError from '../../errors/handleZodError';
 import log from '../../shared/log';
-import { IGenericErrorMessage } from '../../types/errorTypes';
+import { IGenericErrorMessage } from '../../types/error.types';
 
 const globalErrorHandler: ErrorRequestHandler = (
   error,
