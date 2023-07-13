@@ -75,10 +75,37 @@ const getSingleSemesterFromDb = async (
   return await AcademicSemester.findById(id);
 };
 
+const updateSemesterFromDb = async (
+  id: string,
+  payload: Partial<IAcademicSemester>
+): Promise<IAcademicSemester | null> => {
+  if (
+    payload.title &&
+    payload.code &&
+    academicSemesterTitleCodeMapper[payload.title] !== payload.code
+  ) {
+    throw new ApiError(
+      httpStatus.BAD_REQUEST,
+      'Invalid semester input, code and title must match'
+    );
+  }
+  return await AcademicSemester.findOneAndUpdate({ _id: id }, payload, {
+    new: true,
+  });
+};
+
+const deleteSemesterFromDb = async (
+  id: string
+): Promise<IAcademicSemester | null> => {
+  return await AcademicSemester.findByIdAndDelete(id);
+};
+
 const AcademicSemesterService = {
   createSemesterInDb,
   getAllSemestersFromDb,
   getSingleSemesterFromDb,
+  updateSemesterFromDb,
+  deleteSemesterFromDb,
 };
 
 export default AcademicSemesterService;
