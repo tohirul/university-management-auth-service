@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
-import { ErrorRequestHandler, Request, Response } from 'express';
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import { Error } from 'mongoose';
 import { ZodError } from 'zod';
 import config from '../../config';
@@ -14,7 +14,9 @@ import { IGenericErrorMessage } from '../../types/error.types';
 const globalErrorHandler: ErrorRequestHandler = (
   error,
   req: Request,
-  res: Response
+  res: Response,
+  // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
+  next: NextFunction
 ) => {
   config.env === 'development'
     ? console.log('Global Error Handler: ', error)
