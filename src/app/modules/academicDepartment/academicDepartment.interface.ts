@@ -12,6 +12,6 @@ export type AcademicDepartmentModel = Model<
 >;
 
 export type IAcademicDepartmentFilter = {
-  seaachTerm?: string;
+  searchTerm?: string;
   academicFaculty?: Types.ObjectId;
 };
