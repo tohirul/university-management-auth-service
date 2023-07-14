@@ -189,6 +189,26 @@
             "date": 1689278406938,
             "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-14-07-02.log",
             "hash": "6ef39958bfe1945fc307034e80d7f5fc10d849fa0912b3bbd4fb5682a67cf857"
+        },
+        {
+            "date": 1689282086892,
+            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-14-07-03.log",
+            "hash": "474ae64218e626fb9ed627cb6f8f59316ac929e0949259ec3784050b45acdd41"
+        },
+        {
+            "date": 1689302552123,
+            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-14-07-08.log",
+            "hash": "3307cab10d001e52935bdeb213de69dd4c9f157967b65a80579c52fcccb73901"
+        },
+        {
+            "date": 1689303660034,
+            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-14-07-09.log",
+            "hash": "f17dfe997d6458e52c211e25636ece24dc9a40c5008504b492ab2e20328f9487"
+        },
+        {
+            "date": 1689315621074,
+            "name": "/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/log/winston/error/error-2023-14-07-12.log",
+            "hash": "f409cf2aa2f9fe3af052922684d5bd465e1828828c3118a7cfef3a37f2bbfb0d"
         }
     ],
     "hashType": "sha256"

@@ -33,12 +33,12 @@ const getAllAcademicFacultiesFromDb = async (
   if (searchTerm) {
     conditions.push({
       $or: academicFacultySearchableFields.map(field => ({
-        [field]: { $regex: searchTerm, options: 'i' },
+        [field]: { $regex: searchTerm, $options: 'i' },
       })),
     });
   }
 
-  if (Object.keys(filtersData).length) {
+  if (Object.keys(filtersData).length > 0) {
     conditions.push({
       $and: Object.entries(filtersData).map(([field, value]) => ({
         [field]: value,
@@ -65,10 +65,27 @@ const getAllAcademicFacultiesFromDb = async (
   };
 };
 
+const deleteFacultyFromDb = async (
+  id: string
+): Promise<IAcademicFaculty | null> => {
+  return AcademicFaculty.findByIdAndDelete(id);
+};
+
+const updateFacultyInDb = async (
+  id: string,
+  payload: Partial<IAcademicFaculty>
+): Promise<IAcademicFaculty | null> => {
+  return await AcademicFaculty.findOneAndUpdate({ _id: id }, payload, {
+    new: true,
+  });
+};
+
 const AcademicFacultyService = {
   createFacultyInDb,
   getFacultyFromDb,
   getAllAcademicFacultiesFromDb,
+  deleteFacultyFromDb,
+  updateFacultyInDb,
 };
 
 export default AcademicFacultyService;

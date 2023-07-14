@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const createFacultyValidation = z.object({
+const createFacultyZodValidationSchema = z.object({
   body: z.object({
     title: z.string({
       required_error: 'Title is required to create a faculty',
@@ -8,7 +8,16 @@ const createFacultyValidation = z.object({
   }),
 });
 
+const updatefacultyZodValidationSchema = z.object({
+  body: z.object({
+    title: z.string({
+      required_error: 'Title is required',
+    }),
+  }),
+});
+
 const AcademicFacultyValidation = {
-  createFacultyValidation,
+  createFacultyZodValidationSchema,
+  updatefacultyZodValidationSchema,
 };
 export default AcademicFacultyValidation;

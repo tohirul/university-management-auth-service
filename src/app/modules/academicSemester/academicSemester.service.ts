@@ -32,13 +32,13 @@ const getAllSemestersFromDb = async (
     paginationHelpers.calculatePagination(options);
 
   const conditions = [];
-  if (searchTerm)
+  if (searchTerm) {
     conditions.push({
       $or: academicSemesterSearchFields.map(field => ({
         [field]: { $regex: searchTerm, $options: 'i' },
       })),
     });
-
+  }
   if (Object.keys(filtersData).length > 0) {
     conditions.push({
       $and: Object.entries(filtersData).map(([field, value]) => ({
