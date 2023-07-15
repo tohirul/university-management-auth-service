@@ -5,7 +5,7 @@ import paginationHelpers from '../../../helpers/pagination.helper';
 import { IGenericResponse } from '../../../types/common.types';
 import { IPaginationOptions } from '../../../types/pagination.types';
 import {
-  academicSemesterSearchFields,
+  AcademicSemesterSearchableFields,
   academicSemesterTitleCodeMapper,
 } from './academicSemester.constant';
 import {
@@ -34,7 +34,7 @@ const getAllSemestersFromDb = async (
   const conditions = [];
   if (searchTerm) {
     conditions.push({
-      $or: academicSemesterSearchFields.map(field => ({
+      $or: AcademicSemesterSearchableFields.map(field => ({
         [field]: { $regex: searchTerm, $options: 'i' },
       })),
     });

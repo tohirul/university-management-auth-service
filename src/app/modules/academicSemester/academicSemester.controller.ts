@@ -4,7 +4,7 @@ import { paginationFields } from '../../../constants/pagination.constants';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
-import { filterableFields } from './academicSemester.constant';
+import { AcademicSemesterFilterableFields } from './academicSemester.constant';
 import {
   IAcademicSemester,
   IAcademicSemesterFilter,
@@ -29,7 +29,7 @@ const getAllSemesters = catchAsync(
   async (req: Request, res: Response): Promise<void> => {
     const filters = pick(
       req.query,
-      filterableFields
+      AcademicSemesterFilterableFields
     ) as IAcademicSemesterFilter;
     const paginationOptions = pick(req.query, paginationFields);
     const result = await AcademicSemesterService.getAllSemestersFromDb(
