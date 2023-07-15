@@ -2,10 +2,13 @@ import config from '../../../config';
 import ApiError from '../../../errors/ApiError';
 import { IUser } from './user.interface';
 import User from './user.model';
-import { sendUserId } from './user.utility';
+import { generateAdminId } from './user.utility';
 
 const createUserInDb = async (info: IUser): Promise<IUser | null> => {
-  const id = await sendUserId();
+  // const academicSemester = {
+  //   year:'2023', code:'02'
+  // }
+  const id = await generateAdminId();
   info.id = id;
 
   if (!info.password) {

@@ -7,8 +7,8 @@ import UserService from './user.service';
 
 const createUser = catchAsync(
   async (req: Request, res: Response): Promise<void> => {
-    const { user } = req.body;
-    const result = await UserService.createUserInDb(user);
+    const { ...data } = req.body;
+    const result = await UserService.createUserInDb(data);
 
     sendResponse<IUser>(res, {
       statusCode: httpStatus.OK,
