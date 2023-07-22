@@ -52,7 +52,7 @@ const getAllAcademicDepartmentsFromDb = async (
         }
       : {};
 
-  const total = await AcademicDepartment.countDocuments();
+  const total = await AcademicDepartment.countDocuments(searchConditions);
   const result = await AcademicDepartment.find(searchConditions)
     .populate('academicFaculty')
     .sort(sortConditions)

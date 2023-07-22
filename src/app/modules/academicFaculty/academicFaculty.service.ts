@@ -54,7 +54,7 @@ const getAllAcademicFacultiesFromDb = async (
     .sort(sortConditions)
     .skip(skip)
     .limit(limit);
-  const total = await AcademicFaculty.countDocuments();
+  const total = await AcademicFaculty.countDocuments(searchConditions);
   return {
     meta: {
       page,

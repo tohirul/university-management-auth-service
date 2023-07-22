@@ -5,16 +5,16 @@ import {
   guardianSchema,
   localGuardianSchema,
   userNameSchema,
-} from './student.subdocument';
+} from './student.model.subdocument';
 
-const studentSchema = new Schema<IStudent>(
+export const studentSchema = new Schema(
   {
     id: {
       type: String,
       required: true,
       unique: true,
     },
-    name: { type: userNameSchema, required: true },
+    name: userNameSchema,
     gender: { type: String, enum: gender, required: true },
     dateOfBirth: { type: String, required: true },
     email: { type: String, required: true, unique: true },
@@ -23,8 +23,8 @@ const studentSchema = new Schema<IStudent>(
     bloodGroup: { type: String, required: true, enum: bloodGroup },
     presentAddress: { type: String, required: true },
     permanentAddress: { type: String, required: true },
-    guardian: { type: guardianSchema, required: true },
-    localGuardian: { type: localGuardianSchema, required: true },
+    guardian: guardianSchema,
+    localGuardian: localGuardianSchema,
     academicFaculty: {
       type: Schema.Types.ObjectId,
       ref: 'AcademicFaculty',

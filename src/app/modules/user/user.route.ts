@@ -7,9 +7,9 @@ const router = express.Router();
 
 // * Post request
 router.post(
-  '/create_new_user',
-  validateRequest(UserValidation.createUserZodSchema),
-  UserController.createUser
+  '/create_new_student',
+  validateRequest(UserValidation.createStudentZodSchema),
+  UserController.createStudent
 );
 
 const UserRoutes = router;

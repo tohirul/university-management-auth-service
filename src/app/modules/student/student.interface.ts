@@ -45,6 +45,8 @@ export type IStudent = {
   profileImage?: string;
 };
 
+// export type IStudent = InferSchemaType<typeof studentSchema>
+
 export type StudentModel = Model<IStudent, Record<string, unknown>>;
 
 export type IStudentFilters = {

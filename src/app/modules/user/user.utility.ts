@@ -20,17 +20,19 @@ const findLastStrudentId = async (): Promise<string | undefined> => {
     .lean();
   return lastStudent?.id ? lastStudent.id.substring(4) : undefined;
 };
-export const generateStudentId = async (academicSemester: {
-  year: string;
-  code: string;
-}): Promise<string> => {
+export const generateStudentId = async (
+  academicSemester: {
+    year: string;
+    code: string;
+  } | null
+): Promise<string> => {
   const currentId =
     (await findLastStrudentId()) || '0'; /* (0).toString().padStart(5, '0'); */
   const increamentId = (parseInt(currentId, 10) + 1)
     .toString()
     .padStart(5, '0');
-  return `${academicSemester.year.substring(2)}${
-    academicSemester.code
+  return `${academicSemester?.year.substring(2)}${
+    academicSemester?.code
   }${increamentId}`;
 };
 
