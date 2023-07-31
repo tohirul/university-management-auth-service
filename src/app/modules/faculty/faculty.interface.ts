@@ -11,18 +11,18 @@ export type UserName = {
 export type IFaculty = {
   id: string;
   name: UserName;
-  profileImage: string;
   dateOfBirth: string;
   email: string;
   contactNo: string;
   emergencyContactNo: string;
-  gender?: 'male' | 'female';
+  gender: 'male' | 'female';
   permanentAddress?: string;
   presentAddress?: string;
   bloodGroup?: 'A+' | 'A-' | 'B+' | 'B-' | 'AB+' | 'AB-' | 'O+' | 'O-';
   academicDepartment: Types.ObjectId | IAcademicDepartment;
   academicFaculty: Types.ObjectId | IAcademicFaculty;
   designation: string;
+  profileImage?: string;
 };
 
 export type FacultyModel = Model<IFaculty, Record<string, unknown>>;

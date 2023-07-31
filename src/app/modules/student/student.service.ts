@@ -100,25 +100,29 @@ const updateStudentInDb = async (
 };
 
 const deleteStudentFromDb = async (id: string): Promise<IStudent | null> => {
-  const exists = await Student.findOne({ id });
+  const student = await Student.findOne({ id });
 
-  if (!exists) throw new ApiError(httpStatus.NOT_FOUND, 'Student not found');
+  if (!student) throw new ApiError(httpStatus.NOT_FOUND, 'Student not found');
 
   const session = await mongoose.startSession();
+  session.startTransaction();
 
   try {
-    session.startTransaction();
     const deletedStudent = await Student.findOneAndDelete({ id }, { session });
+
     if (!deletedStudent)
       throw new ApiError(httpStatus.NOT_FOUND, 'Failed to delete student');
-    await User.deleteOne({ id });
 
-    session.commitTransaction();
-    session.endSession();
+    await User.deleteOne({ id }).session(session);
+
+    await session.commitTransaction();
     return deletedStudent;
   } catch (error) {
-    session.abortTransaction();
+    await session.abortTransaction();
     throw error;
+  } finally {
+    // End the session after either commit or rollback
+    session.endSession();
   }
 };
 

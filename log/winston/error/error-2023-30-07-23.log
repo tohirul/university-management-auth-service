@@ -1,0 +1,130 @@
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:377:14\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:09:31.662Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:377:14\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:12:15.347Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:377:14\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:16:19.011Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:377:14\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:21:02.776Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:377:14\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:21:45.297Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:377:14\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:24:44.653Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:376:15\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:28:56.807Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:376:15\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:33:40.496Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:376:15\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:39:01.217Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: 'unhandledRejection Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]',
+  stack: 'MongoRuntimeError: Attempted illegal state transition from [TRANSACTION_ABORTED] to [TRANSACTION_COMMITTED]\n' +
+    '    at Transaction.transition (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/transactions.ts:168:11)\n' +
+    '    at commandHandler (/home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:723:25)\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/sessions.ts:784:7\n' +
+    '    at /home/megatron/Coding/Programming Hero/Level 2/Mission 3/Module-11/university-management-auth-service/node_modules/mongodb/src/utils.ts:376:15\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'Tohirul',
+  timestamp: '2023-07-30T17:41:40.460Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}

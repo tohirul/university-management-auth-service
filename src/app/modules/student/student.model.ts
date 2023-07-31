@@ -1,13 +1,14 @@
 import { Schema, model } from 'mongoose';
-import { bloodGroup, gender } from './student.constant';
-import { IStudent, StudentModel } from './student.interface';
 import {
   guardianSchema,
   localGuardianSchema,
   userNameSchema,
-} from './student.model.subdocument';
+} from '../../../shared/model.subdocument';
 
-export const studentSchema = new Schema(
+import { bloodGroup, gender } from '../../../shared/shared.constant';
+import { IStudent, StudentModel } from './student.interface';
+
+export const studentSchema = new Schema<IStudent, StudentModel>(
   {
     id: {
       type: String,

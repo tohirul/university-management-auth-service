@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { bloodGroup, gender } from './student.constant';
+import { bloodGroup, gender } from '../../../shared/shared.constant';
 import {
   guardianSubdocument,
   localGuardianSubdocument,

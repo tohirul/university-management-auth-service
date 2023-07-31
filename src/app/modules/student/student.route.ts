@@ -16,5 +16,5 @@ route.patch(
   StudentController.updateStudent
 );
 
-const StudentRoute = route;
-export default StudentRoute;
+const StudentRoutes = route;
+export default StudentRoutes;
