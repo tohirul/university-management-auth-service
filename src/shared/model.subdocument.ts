@@ -1,5 +1,9 @@
 import { Schema } from 'mongoose';
-import { Guardian, LocalGuardian, UserName } from './student.interface';
+import {
+  Guardian,
+  LocalGuardian,
+  UserName,
+} from '../app/modules/student/student.interface';
 
 export const userNameSchema = new Schema<UserName>({
   firstName: {
