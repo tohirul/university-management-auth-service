@@ -1,0 +1,12 @@
+{
+  message: 'Server is breathing on 5000',
+  level: 'info',
+  label: 'Tohirul',
+  timestamp: '2023-07-21T08:48:32.395Z'
+}
+{
+  message: 'Database Connection Established',
+  level: 'info',
+  label: 'Tohirul',
+  timestamp: '2023-07-21T08:48:35.786Z'
+}

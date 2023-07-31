@@ -2,11 +2,6 @@ import cors from 'cors';
 import express, { Application, NextFunction, Request, Response } from 'express';
 import httpStatus from 'http-status';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
-import {
-  generateAdminId,
-  generateFacultyId,
-  generateStudentId,
-} from './app/modules/user/user.utility';
 import Routes from './app/routes/routes';
 
 const app: Application = express();
@@ -38,16 +33,16 @@ app.get('/', async (req: Request, res: Response) => {
   res.send('Hi, Server is running');
 });
 
-const academicSemester = {
-  year: '2023',
-  code: '02',
-};
-const generateNewId = async () => {
-  const stuId = await generateStudentId(academicSemester);
-  const facId = await generateFacultyId();
-  const admId = await generateAdminId();
-  console.log(stuId, facId, admId);
-};
-generateNewId();
+// const academicSemester = {
+//   year: '2023',
+//   code: '02',
+// };
+// const generateNewId = async () => {
+//   const stuId = await generateStudentId(academicSemester);
+//   const facId = await generateFacultyId();
+//   const admId = await generateAdminId();
+//   console.log(stuId, facId, admId);
+// };
+// generateNewId();
 
 export default app;

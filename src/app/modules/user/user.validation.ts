@@ -1,16 +1,15 @@
 import { z } from 'zod';
+import studentZodValidation from '../student/student.validation';
 
-const createUserZodSchema = z.object({
+const createStudentZodSchema = z.object({
   body: z.object({
-    role: z.string({
-      required_error: 'role is required',
-    }),
     password: z.string().optional(),
+    student: studentZodValidation.createStudentZodObject,
   }),
 });
 
 const UserValidation = {
-  createUserZodSchema,
+  createStudentZodSchema,
 };
 
 export default UserValidation;
