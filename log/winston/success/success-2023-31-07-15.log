@@ -220,3 +220,9 @@
   label: 'Tohirul',
   timestamp: '2023-07-31T09:19:18.854Z'
 }
+{
+  message: 'Server received SIGTERM signal. Server connection will be closed.',
+  level: 'warn',
+  label: 'Tohirul',
+  timestamp: '2023-07-31T09:26:45.336Z'
+}
