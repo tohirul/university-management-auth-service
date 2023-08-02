@@ -13,5 +13,21 @@ router.post(
   ManagementDepartmentController.createManagementDepartment
 );
 
+router.get('/', ManagementDepartmentController.getAllManagementDepartments);
+router.get('/:id', ManagementDepartmentController.getManagementDepartmentById);
+
+router.delete(
+  '/:id',
+  ManagementDepartmentController.deleteManagementDepartment
+);
+
+router.patch(
+  '/:id',
+  validateRequest(
+    ManagementDepartmentValidation.updateManagementDepartmentZodSchema
+  ),
+  ManagementDepartmentController.updateManagementDepartment
+);
+
 const ManagementDepartmentRoutes = router;
 export default ManagementDepartmentRoutes;

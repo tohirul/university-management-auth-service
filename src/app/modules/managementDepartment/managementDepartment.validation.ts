@@ -7,8 +7,16 @@ const createManagementDepartmentZodSchema = z.object({
     }),
   }),
 });
+const updateManagementDepartmentZodSchema = z.object({
+  body: z.object({
+    title: z.string({
+      required_error: 'Please provide a title',
+    }),
+  }),
+});
 
 const ManagementDepartmentValidation = {
   createManagementDepartmentZodSchema,
+  updateManagementDepartmentZodSchema,
 };
 export default ManagementDepartmentValidation;
