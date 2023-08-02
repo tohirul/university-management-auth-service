@@ -43,11 +43,11 @@ const createStudentInDb = async (
     data = createdUser[0];
 
     await session.commitTransaction();
-    await session.endSession();
   } catch (error) {
     await session.abortTransaction();
-    await session.endSession();
     throw error;
+  } finally {
+    await session.endSession();
   }
 
   if (data) {
@@ -96,11 +96,11 @@ const createFacultyInDb = async (
     data = createdFaculty[0];
 
     await session.commitTransaction();
-    await session.endSession();
   } catch (error) {
     await session.abortTransaction();
-    await session.endSession();
     throw error;
+  } finally {
+    await session.endSession();
   }
   if (data) {
     data = User.findOne({ id: data.id }).populate({

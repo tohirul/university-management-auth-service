@@ -102,7 +102,7 @@ const deleteFacultyFromDb = async (id: string): Promise<IFaculty | null> => {
       throw new ApiError(httpStatus.NOT_FOUND, 'Failed to delete faculty');
     }
 
-    // Assuming you have a related User model that needs to be deleted
+    // Related User model that needs to be deleted
     await User.deleteOne({ id }).session(session);
 
     await session.commitTransaction();
