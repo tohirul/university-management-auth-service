@@ -10,15 +10,15 @@ const URI = index_1.default.database_url;
 const dbConnect = async () => {
     try {
         if (!URI) {
-            console.error('No URI found in the configuration');
+            console.log('No URI found in the configuration');
             process_1.default.exit(1);
         }
         await mongoose_1.default.connect(URI).then(() => {
-            console.info('Database Connection Established');
+            console.log('Database Connection Established');
         });
     }
     catch (error) {
-        console.error(error.message);
+        console.log(error.message);
     }
 };
 exports.default = dbConnect;
