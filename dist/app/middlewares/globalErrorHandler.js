@@ -10,13 +10,12 @@ const ApiError_1 = __importDefault(require("../../errors/ApiError"));
 const handleCastError_1 = __importDefault(require("../../errors/handleCastError"));
 const handleValidationError_1 = __importDefault(require("../../errors/handleValidationError"));
 const handleZodError_1 = __importDefault(require("../../errors/handleZodError"));
-const log_1 = __importDefault(require("../../shared/log"));
 const globalErrorHandler = (error, req, res, 
 // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 next) => {
     config_1.default.env === 'development'
         ? console.log('Global Error Handler: ', error)
-        : log_1.default.checkError.error('Global Error Handler: ', error);
+        : console.error('Global Error Handler: ', error);
     let statusCode = 500;
     let message = 'Something went wrong';
     let errorMessages = [];
