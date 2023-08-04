@@ -13,10 +13,10 @@ const toggleServer = async (): Promise<void> => {
   try {
     dbConnect();
     server = app.listen(PORT, () => {
-      console.info(`Server is breathing on ${PORT}`);
+      console.log(`Server is breathing on ${PORT}`);
     });
   } catch (error) {
-    console.error(error);
+    console.log(error);
   }
 };
 
@@ -29,12 +29,12 @@ process.on('SIGTERM', async () => {
 });
 
 process.on('unhandledRejection', async (error: Error) => {
-  console.error('unhandledRejection', error);
+  console.log('unhandledRejection', error);
   handleServerShutdown('unhandledRejection', error);
 });
 
 process.on('uncaughtException', (error: Error) => {
-  console.error('Uncaught Exception:', error);
+  console.log('Uncaught Exception:', error);
   handleServerShutdown('uncaughtException', error);
 });
 const handleServerShutdown = async (eventName: string, error?: Error) => {
@@ -46,13 +46,13 @@ const handleServerShutdown = async (eventName: string, error?: Error) => {
     if (server) {
       server.close(() => {
         if (error) {
-          console.error(error);
+          console.log(error);
         }
       });
     }
     process.exit(0);
   } catch (error) {
-    console.error(error);
+    console.log(error);
     process.exit(1);
   }
 };

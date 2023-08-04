@@ -8,14 +8,14 @@ const URI = config.database_url as string;
 const dbConnect = async (): Promise<void> => {
   try {
     if (!URI) {
-      console.error('No URI found in the configuration');
+      console.log('No URI found in the configuration');
       process.exit(1);
     }
     await mongoose.connect(URI).then(() => {
-      console.info('Database Connection Established');
+      console.log('Database Connection Established');
     });
   } catch (error) {
-    console.error((error as Error).message);
+    console.log((error as Error).message);
   }
 };
 

@@ -15,7 +15,7 @@ const globalErrorHandler = (error, req, res,
 next) => {
     config_1.default.env === 'development'
         ? console.log('Global Error Handler: ', error)
-        : console.error('Global Error Handler: ', error);
+        : console.log('Global Error Handler: ', error);
     let statusCode = 500;
     let message = 'Something went wrong';
     let errorMessages = [];
