@@ -33,12 +33,8 @@ process.on('unhandledRejection', async (error: Error) => {
   handleServerShutdown('unhandledRejection', error);
 });
 
-process.on('uncaughtException', (error: Error) => {
-  console.log('Uncaught Exception:', error);
-  handleServerShutdown('uncaughtException', error);
-});
 const handleServerShutdown = async (eventName: string, error?: Error) => {
-  console.warn(
+  console.log(
     `Server received ${eventName} signal. Server connection will be closed.`
   );
   if (eventName === 'SIGINT') await mongoose.disconnect();
