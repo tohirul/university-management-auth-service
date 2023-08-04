@@ -8,7 +8,6 @@ import ApiError from '../../errors/ApiError';
 import handleCastError from '../../errors/handleCastError';
 import handleValidationError from '../../errors/handleValidationError';
 import handleZodError from '../../errors/handleZodError';
-import log from '../../shared/log';
 import { IGenericErrorMessage } from '../../types/error.types';
 
 const globalErrorHandler: ErrorRequestHandler = (
@@ -20,7 +19,7 @@ const globalErrorHandler: ErrorRequestHandler = (
 ) => {
   config.env === 'development'
     ? console.log('Global Error Handler: ', error)
-    : log.checkError.error('Global Error Handler: ', error);
+    : console.error('Global Error Handler: ', error);
 
   let statusCode = 500;
   let message = 'Something went wrong';
