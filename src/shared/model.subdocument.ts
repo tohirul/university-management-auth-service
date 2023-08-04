@@ -10,7 +10,10 @@ export const userNameSchema = new Schema<UserName>({
     type: String,
     required: true,
   },
-  middleName: { type: String, required: false },
+  middleName: {
+    type: String,
+    required: false,
+  },
   lastName: {
     type: String,
     required: true,

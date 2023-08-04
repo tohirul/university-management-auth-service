@@ -24,7 +24,9 @@ const createStudentZodObject = z.object({
   }),
   guardian: guardianSubdocument,
   localGuardian: localGuardianSubdocument,
-  academicFaculty: z.string({ required_error: 'Academic Faculty is required' }),
+  academicFaculty: z.string({
+    required_error: 'Academic Faculty is required',
+  }),
   academicDepartment: z.string({
     required_error: 'Academic department is required',
   }),

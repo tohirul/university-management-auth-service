@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import AdminZodValidation from '../admin/admin.validation';
 import FacultyZodValidation from '../faculty/faculty.validation';
 import studentZodValidation from '../student/student.validation';
 
@@ -16,9 +17,17 @@ const createFacultyZodSchema = z.object({
   }),
 });
 
+const createAdminZodSchema = z.object({
+  body: z.object({
+    password: z.string().optional(),
+    admin: AdminZodValidation.createAdminZodObject,
+  }),
+});
+
 const UserValidation = {
   createStudentZodSchema,
   createFacultyZodSchema,
+  createAdminZodSchema,
 };
 
 export default UserValidation;

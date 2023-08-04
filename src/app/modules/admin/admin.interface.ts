@@ -22,7 +22,7 @@ export type IAdmin = {
   managementDepartment: Types.ObjectId | IManagementDepartment;
 };
 
-export type StudentModel = Model<IAdmin, Record<string, unknown>>;
+export type AdminModel = Model<IAdmin, Record<string, unknown>>;
 
 export type IAdminFilters = {
   searchTerm?: string;
