@@ -20,28 +20,24 @@ next) => {
     let message = 'Something went wrong';
     let errorMessages = [];
     if (error?.name === 'ValidationError') {
-        console.log('Error Got into ValidationError Condition');
         const simplifiedError = (0, handleValidationError_1.default)(error);
         statusCode = simplifiedError.statusCode;
         message = simplifiedError.message;
         errorMessages = simplifiedError.errorMessages;
     }
     else if (error instanceof zod_1.ZodError) {
-        console.log('Error Got into ZodError Condition');
         const simplifiedError = (0, handleZodError_1.default)(error);
         statusCode = simplifiedError.statusCode;
         message = simplifiedError.message;
         errorMessages = simplifiedError.errorMessages;
     }
     else if (error?.name === 'CastError') {
-        console.log('Error Got into CaseError Condtion');
         const simplifiedError = (0, handleCastError_1.default)(error);
         statusCode = simplifiedError.statusCode;
         message = simplifiedError.message;
         errorMessages = simplifiedError.errorMessages;
     }
     else if (error instanceof ApiError_1.default) {
-        console.log('Error Got into Error Condition');
         statusCode = error?.statusCode;
         message = error.message;
         errorMessages = error?.message
@@ -54,7 +50,6 @@ next) => {
             : [];
     }
     else if (error instanceof mongoose_1.Error) {
-        console.log('Error Got into MongooseError Condition');
         message = error?.message;
         errorMessages = error?.message
             ? [
