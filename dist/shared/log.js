@@ -43,4 +43,4 @@ const checkError = (0, winston_1.createLogger)({
         }),
     ],
 });
-exports.default = { checkInfo, checkError };
+exports.default = { checkInfo, console: checkError };

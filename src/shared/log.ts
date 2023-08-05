@@ -69,4 +69,4 @@ const checkError = createLogger({
   ],
 });
 
-export default { checkInfo, checkError };
+export default { checkInfo, console: checkError };
