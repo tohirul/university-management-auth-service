@@ -29,11 +29,11 @@ const user_route_1 = __importDefault(require('../modules/user/user.route'));
 const router = express_1.default.Router();
 const moduleRoutes = [
   {
-    path: '/users',
+    path: '/user',
     route: user_route_1.default,
   },
   {
-    path: '/academic_semesters',
+    path: '/academic_semester',
     route: academicSemester_route_1.default,
   },
   {
@@ -45,16 +45,16 @@ const moduleRoutes = [
     route: academicDepartment_route_1.default,
   },
   {
+    path: '/managementDepartment',
+    route: managementDepartment_route_1.default,
+  },
+  {
     path: '/student',
     route: student_route_1.default,
   },
   {
     path: '/faculty',
     route: faculty_route_1.default,
-  },
-  {
-    path: '/managementDepartment',
-    route: managementDepartment_route_1.default,
   },
   {
     path: '/admin',
@@ -64,6 +64,5 @@ const moduleRoutes = [
 for (const { path, route } of moduleRoutes) {
   router.use(path, route);
 }
-// router.use('/users', UserRoutes);
 const Routes = router;
 exports.default = Routes;
