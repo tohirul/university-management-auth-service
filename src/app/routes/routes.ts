@@ -28,16 +28,16 @@ const moduleRoutes = [
     route: AcademicDepartmentRoutes,
   },
   {
+    path: '/managementDepartment',
+    route: ManagementDepartmentRoutes,
+  },
+  {
     path: '/student',
     route: StudentRoutes,
   },
   {
     path: '/faculty',
     route: FacultyRoutes,
-  },
-  {
-    path: '/managementDepartment',
-    route: ManagementDepartmentRoutes,
   },
   {
     path: '/admin',
