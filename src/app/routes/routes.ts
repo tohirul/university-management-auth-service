@@ -12,11 +12,11 @@ const router = express.Router();
 
 const moduleRoutes = [
   {
-    path: '/users',
+    path: '/user',
     route: UserRoutes,
   },
   {
-    path: '/academic_semesters',
+    path: '/academic_semester',
     route: AcademicSemesterRoutes,
   },
   {
@@ -48,8 +48,6 @@ const moduleRoutes = [
 for (const { path, route } of moduleRoutes) {
   router.use(path, route);
 }
-
-// router.use('/users', UserRoutes);
 
 const Routes = router;
 export default Routes;
