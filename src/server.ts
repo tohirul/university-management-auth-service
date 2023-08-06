@@ -12,7 +12,7 @@ let server: http.Server;
 
 const toggleServer = async (): Promise<void> => {
   try {
-    dbConnect();
+    await dbConnect();
     server = app.listen(PORT, () => {
       console.info(`Server is breathing on ${PORT}`);
     });
