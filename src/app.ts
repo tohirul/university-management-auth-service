@@ -17,8 +17,8 @@ app.get('/', async (req: Request, res: Response) => {
     description: 'API for managing university-related data.',
     documentation: 'Link to API documentation goes here',
     endpoints: {
-      users: '/api/v1/users',
-      academiSemesters: 'api/v1/academic_semesters',
+      users: '/api/v1/user',
+      academiSemesters: 'api/v1/academic_semester',
       academicFaculty: '/api/v1/academic_faculty',
       academicDepartment: '/api/v1/academic_department',
       managementDepartment: '/api/v1/management_department',
