@@ -18,10 +18,27 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 // ? Test Run
 app.get('/', async (req, res) => {
+  const apiInfo = {
+    name: 'University Management API',
+    version: '1.0.0',
+    description: 'API for managing university-related data.',
+    documentation: 'Link to API documentation goes here',
+    endpoints: {
+      users: '/api/v1/users',
+      academiSemesters: 'api/v1/academic_semesters',
+      academicFaculty: '/api/v1/academic_faculty',
+      academicDepartment: '/api/v1/academic_department',
+      managementDepartment: '/api/v1/management_department',
+      student: '/api/v1/student',
+      faculty: '/api/v1/faculty',
+      admin: '/api/v1/admin',
+    },
+  };
   res.status(200).json({
     statusCode: http_status_1.default.OK,
     success: true,
     message: 'Server is live and ready to use',
+    ...apiInfo,
   });
 });
 // * Application Routes
