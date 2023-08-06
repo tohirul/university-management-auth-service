@@ -9,13 +9,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// * Application Routes
-app.use('/api/v1/', Routes);
-
 // ? Test Run
 app.get('/', async (req: Request, res: Response) => {
-  res.status(200).json({ message: 'Hi, Server is running' });
+  res.status(200).json({ message: 'Hi, Server is live and ready to use' });
 });
+
+// * Application Routes
+app.use('/api/v1/', Routes);
 
 // ? Global Error Handler
 app.use(globalErrorHandler);
