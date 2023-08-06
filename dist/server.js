@@ -14,7 +14,7 @@ const PORT = config_1.default.port;
 let server;
 const toggleServer = async () => {
   try {
-    (0, dbConnect_1.default)();
+    await (0, dbConnect_1.default)();
     server = app_1.default.listen(PORT, () => {
       console.info(`Server is breathing on ${PORT}`);
     });

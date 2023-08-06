@@ -16,6 +16,14 @@ const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
+// ? Test Run
+app.get('/', async (req, res) => {
+  res.status(200).json({
+    statusCode: http_status_1.default.OK,
+    success: true,
+    message: 'Server is live and ready to use',
+  });
+});
 // * Application Routes
 app.use('/api/v1/', routes_1.default);
 // ? Global Error Handler
@@ -33,19 +41,4 @@ app.use((req, res) => {
     ],
   });
 });
-// ? Test Run
-app.get('/', async (req, res) => {
-  res.status(200).json({ message: 'Hi, Server is running' });
-});
-// const academicSemester = {
-//   year: '2023',
-//   code: '02',
-// };
-// const generateNewId = async () => {
-//   const stuId = await generateStudentId(academicSemester);
-//   const facId = await generateFacultyId();
-//   const admId = await generateAdminId();
-//   console.log(stuId, facId, admId);
-// };
-// generateNewId();
 exports.default = app;

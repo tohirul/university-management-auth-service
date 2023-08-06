@@ -5,6 +5,7 @@ var __importDefault =
     return mod && mod.__esModule ? mod : { default: mod };
   };
 Object.defineProperty(exports, '__esModule', { value: true });
+/* eslint-disable no-console */
 const mongoose_1 = __importDefault(require('mongoose'));
 const process_1 = __importDefault(require('process'));
 const index_1 = __importDefault(require('./config/index'));
