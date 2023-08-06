@@ -12,6 +12,11 @@ app.use(express.urlencoded({ extended: true }));
 // * Application Routes
 app.use('/api/v1/', Routes);
 
+// ? Test Run
+app.get('/', async (req: Request, res: Response) => {
+  res.status(200).json({ message: 'Hi, Server is running' });
+});
+
 // ? Global Error Handler
 app.use(globalErrorHandler);
 
@@ -28,21 +33,5 @@ app.use((req: Request, res: Response) => {
     ],
   });
 });
-// ? Test Run
-app.get('/', async (req: Request, res: Response) => {
-  res.status(200).json({ message: 'Hi, Server is running' });
-});
-
-// const academicSemester = {
-//   year: '2023',
-//   code: '02',
-// };
-// const generateNewId = async () => {
-//   const stuId = await generateStudentId(academicSemester);
-//   const facId = await generateFacultyId();
-//   const admId = await generateAdminId();
-//   console.log(stuId, facId, admId);
-// };
-// generateNewId();
 
 export default app;
