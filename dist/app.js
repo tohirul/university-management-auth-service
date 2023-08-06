@@ -14,7 +14,11 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 // ? Test Run
 app.get('/', async (req, res) => {
-    res.status(200).json({ message: 'Hi, Server is live and ready to use' });
+    res.status(200).json({
+        statusCode: http_status_1.default.OK,
+        success: true,
+        message: 'Server is live and ready to use'
+    });
 });
 // * Application Routes
 app.use('/api/v1/', routes_1.default);
