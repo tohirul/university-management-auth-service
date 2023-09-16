@@ -87,6 +87,7 @@ const deleteAdmin = async (id: string): Promise<IAdmin | null> => {
 
   const session = await mongoose.startSession();
   await session.startTransaction();
+
   try {
     const deletedAdmin = await Admin.findOneAndDelete({ id }, { session });
 
